@@ -1,12 +1,17 @@
 /*
- * Created 2015-2016 Caleb Ely
- * <http://CodeTriangle.me>
+ * Created 2015-2017 Caleb Ely
+ * <https://CodeTri.net>
  */
 
 
 (function() {
   "use strict";
-  function findParent(ele, _class) {
+  var CONSTANTS = Object.freeze({
+    API_KEY: "AIzaSyAnp7CY0EJ0o0elDINC7WmROmJiY2T-Clw",
+    NUM_OF_VIDEOS: 12 //CHANGE THIS MULTIPLES FOUR TO ADD ROW OTHER ETC
+  });
+
+  function _findParent(ele, _class) {
     // The desired element was not found on the page
     if (ele === null) {
       return null;
@@ -18,127 +23,97 @@
 
       // Keep searching for the element
     } else {
-      return findParent(ele.parentElement, _class);
+      return _findParent(ele.parentElement, _class);
     }
   }
 
-  function __updatePageTitle(title) {
-    var barLoc = document.title.indexOf("|") + 1;
-
-    // We want to remove the extra text added earlier
-    if (!title) {
-      document.title = document.title.substr(barLoc);
-      return true;
-    }
-
-    // We have a blank title, simply append it
-    if (document.title.indexOf("|") === -1) {
-      document.title = title + " | " + document.title;
-      return true;
-    }
-
-    // A title has already been added, replace it with the new one
-    document.title = title + " | " + document.title.substr(barLoc);
-    return true;
+  function _isSame(oldArea, newArea) {
+    return oldArea === newArea;
   }
 
-  function removeFilmDetail() {
-    function _end() {
-      this.removeEventListener("transitionend", _end);
-      this.parentElement.removeChild(this)
+  function insertFilms(films) {
+    var div      = null,
+        qWrapper = document.querySelector(".film-row-wrapper");
 
-      // Update page title
-      __updatePageTitle();
+    // If there are films already visible, remove them
+    if (qWrapper.children.length > 1) {
+      while (qWrapper.firstChild) {
+        qWrapper.removeChild(qWrapper.firstChild);
+      }
     }
 
-    var qFilmDetail = document.querySelector(".film-detail");
-    qFilmDetail.addEventListener("transitionend", _end);
-    qFilmDetail.classList.remove("visible");
+    // Add each film to the page
+    films.forEach(function(v, i) {
+      // Only four films to a row
+      if (i % 4 === 0) {
+        div = document.createElement("div");
+        div.classList.add("film-row");
+        qWrapper.insertAdjacentElement("beforeend", div);
+      }
+
+      div.insertAdjacentHTML("beforeend", v.html);
+    });
   }
 
-  function addFilmDetail(qFilmRow, film, name, page) {
-    // Insert the container for the film details
-    qFilmRow.insertAdjacentHTML("afterend", "<div class='film-detail film-" + film + "'></div>");
-    var qFilmDetail = document.querySelector(".film-detail.film-" + film);
+  function generateFilmReel(data) {
+    // Get the template for the film thumbnail
+    fetch("templates/film.html")
+    .then(function(r) { return r.text(); })
+    .then(function(html) {
 
-    // The page was successfully loaded, insert it
-    qFilmDetail.insertAdjacentHTML("afterbegin", page);
-    qFilmDetail.classList.add("visible");
+      // Generate a thumbnail for each video
+      var films = [];
+      data.items.forEach(function(v, i) {
+        v = v.snippet;
+        var film = new Film(i, v.title, v.resourceId.videoId,
+                            v.playlistId, v.thumbnails.medium);
+        film.compile(html);
+        films.push(film);
+      });
 
-    // Update browser elements
-    window.location.hash = film;
-    __updatePageTitle(name);
-
-    // Scroll to the details
-    smoothScroll.animateScroll(".film-" + film, 0, { updateURL: false });
+      insertFilms(films);
+    });
   }
 
-  function __loadPage(qFilm) {
-    // Extract the file name for this film and the row it is on
-    var qFilmRow = qFilm.parentElement,
-        filmPage = qFilm.id,
-        filmName = qFilm.children[1].textContent;
+  function loadVideos(e) {
+    var qBtn = _findParent(e.target, "btn-playlist-toggle"),
+        qActiveBtn = document.querySelector(".btn-row .btn.active");
 
-    // If a film detail is already on the page, we need to remove it
-    var qOldFilmDetail = document.querySelector(".film-detail");
-    if (qOldFilmDetail) {
-        removeFilmDetail();
+    // A playlist toggle button was not clicked
+     if (qBtn === null) {
+      return false;
+    }
 
-      // If the same film visible was clicked, we only remove it
-      // and not do any more loading
-      if (qOldFilmDetail.classList.contains("film-" + filmPage)) {
+    // The playlist has been changed from the default
+    if (qActiveBtn) {
+      // Do not attempt to load an already visible playlist
+      if (_isSame(qActiveBtn.id, qBtn.id)) {
         return false;
       }
+
+      // Remove the old active button styling
+      qActiveBtn.classList.remove("active");
     }
 
-    // Fetch the film's page
-    microAjax("pages/" + filmPage + ".html", {
-      method: "GET",
-      ajaxMethod: "xhr",
-      success: function(data) {
-        addFilmDetail(qFilmRow, filmPage, filmName, data);
-      }
-    });
-  };
+    // Indicate which playlist we are viewing
+    qBtn.classList.add("active");
 
-  function __onSiteLoad(filmPage) {
-    // We do not have film to load, abort
-    if (filmPage === null) {
-      return false;
-    }
-
-    // Abort if this is not a film
-    var qFilm = document.querySelector("#" + filmPage);
-    if (!qFilm.classList.contains("film")) {
-      return false;
-    }
-
-    // We have a film, load it
-    __loadPage(qFilm);
+    // Load videos for the specified playlist from the YouTube API
+    fetch("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=" +
+          CONSTANTS.NUM_OF_VIDEOS + "&playlistId=" + qBtn.dataset.id +
+          "&fields=items(snippet(playlistId%2CresourceId(playlistId%2CvideoId)%2Cthumbnails%2Ctitle))&key=" +
+          CONSTANTS.API_KEY)
+    .then(function(r) { return r.json(); })
+    .then(generateFilmReel);
   }
 
-  // A film was possibly clicked
-  document.querySelector(".film-library").addEventListener("click", function(e) {
+  // Duplicate this and a thing in the HTML to add another section
+  document.querySelector("#btn-featured").addEventListener("click", loadVideos);
+  document.querySelector("#btn-latest").addEventListener("click", loadVideos);
+  document.querySelector("#btn-tut-bts").addEventListener("click", loadVideos);
 
-    // Find the container element for this film
-    var qFilm = findParent(e.target, "film");
-
-    // Nope, no film was clicked
-    if (qFilm === null) {
-      return false;
-    }
-
-    // Load the film
-    __loadPage(qFilm);
+  // Load the featured playlist on page load
+  document.addEventListener("DOMContentLoaded", function(event) {
+    document.querySelector("#btn-featured").click();
   });
-
-  window.onload = function() {
-    var film = null;
-    // The user is loading a specific film,
-    // get the hash and attempt to load it
-    if (window.location.hash !== "") {
-      film = window.location.hash.match(/#([a-z-]*?)$/i)[1].toLowerCase();
-    }
-    __onSiteLoad(film);
-  }
 }());
