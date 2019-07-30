@@ -622,6 +622,7 @@ footer li {
     padding-left: 31%;
     font-size: 8em;
     padding-top: 0.3em;
+    font-size: 4em;
   }
 }
 
@@ -658,6 +659,10 @@ footer li {
   .nav-social {
     position: relative;
     top: -0.25em;
+  }
+  
+  .large-headers {
+    font-size: 5em;
   }
 }
 
