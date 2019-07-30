@@ -622,7 +622,7 @@ footer li {
     padding-left: 31%;
     font-size: 8em;
     padding-top: 0.3em;
-    font-size: 4em;
+    color: aqua;
   }
 }
 
@@ -639,6 +639,7 @@ footer li {
   .large-headers {
     padding-left: 29%;
     padding-top: 0.2em;
+    font-size: 6em;
   }
 }
 
