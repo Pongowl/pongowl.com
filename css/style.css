@@ -679,3 +679,10 @@ footer li {
     width: 7em;
   }
 }
+
+@media (max-width: 1000px) {
+  .large-headers {
+    padding-left: 1.7em;
+    font-size: 8em;
+  }
+}
