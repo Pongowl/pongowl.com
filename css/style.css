@@ -9,7 +9,7 @@ body {
   background-color: #373740;
   padding: 0;
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Crimson Pro", sans-serif;
   font-size: 17px;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Crimson Pro", sans-serif;
   font-weight: 300;
 }
 
@@ -173,7 +173,7 @@ nav {
 .nav-pages a {
   text-decoration: none;
   color: black;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Crimson Pro", sans-serif;
   font-size: 1.3em;
   font-weight: 300;
 }
@@ -252,12 +252,12 @@ video.fullscreen {
 }
 
 #header-content-image h1 {
-  font-size: 2.5em;
+  font-size: 6em;
   font-weight: 300;
   cursor: default;
   margin: 0;
   padding-top: 0.2em;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Crimson Pro", sans-serif;
 }
 
 #header-content-image h2 {
@@ -448,15 +448,16 @@ video.fullscreen {
 
 .large-headers {
   position: relative;
-  float: right;
+  float: left;
   cursor: default;
   margin-top: 0.05em;
-  padding-right: 10%;
+  padding-left: 24%;
   font-size: 10em;
   margin: 0;
 }
 
 .contact p {
+  font-size: 2em;
   float: right;
   padding-left: 30%;
   padding-right: 10%;
@@ -473,7 +474,7 @@ video.fullscreen {
   border-top: 0.5em solid rgba(255, 255, 255, 0.31);
   /*  background-color: #151517;*/
   position:relative;
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/cloudsss.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -598,7 +599,7 @@ footer li {
 }
 
 
-/*------QUERIES------*/
+/*------MOBILE------*/
 @media (max-width: 355px) {
   .socialism {
     padding-top: 0.8em;
@@ -613,6 +614,15 @@ footer li {
     margin-right: 0;
     margin-top: 0;
   }
+  .contact p {
+    padding-left: 10%;
+    padding-top: 1em;
+  }
+  .large-headers {
+    padding-left: 31%;
+    font-size: 8em;
+    padding-top: 0.3em;
+  }
 }
 
 @media (max-width: 450px) {
@@ -621,6 +631,13 @@ footer li {
   }
   #header-content-image h2 {
     font-size: 1.3em;
+  }
+  .contact p {
+    padding-left: 10%;
+  }
+  .large-headers {
+    padding-left: 29%;
+    padding-top: 0.2em;
   }
 }
 
@@ -653,10 +670,12 @@ footer li {
 
   .large-headers {
     font-size: 4.8em;
+    padding-left: 34%;
+    padding-top: 0.2em;
   }
 
   #lil-rio {
     left: 1em;
-    width: 2.5em;
+    width: 7em;
   }
 }
