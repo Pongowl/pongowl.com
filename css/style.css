@@ -600,46 +600,36 @@ footer li {
 
 
 /*------MOBILE------*/
-@media (max-width: 355px) {
-  .socialism {
-    padding-top: 0.8em;
-  }
-  footer {
-    text-align: center;
-  }
-  #credit {
-    float: none;
-    margin: 0;
-    float: none;
-    margin-right: 0;
-    margin-top: 0;
+@media (max-width: 1000px) {
+  #lil-rio {
+    width: 17%;
   }
   .contact p {
     padding-left: 10%;
-    padding-top: 1em;
   }
   .large-headers {
-    padding-left: 31%;
-    font-size: 8em;
-    padding-top: 0.3em;
-    color: aqua;
+    padding-left: 1.3em;
+/*    font-size: 8em;*/
   }
 }
 
-@media (max-width: 450px) {
-  #header-content-image h1 {
-    font-size: 2.95em;
+
+@media (max-width: 700px) {
+  #about p {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
   }
-  #header-content-image h2 {
-    font-size: 1.3em;
-  }
-  .contact p {
-    padding-left: 10%;
-  }
+
   .large-headers {
-    padding-left: 29%;
+    font-size: 4.8em;
+    padding-left: 34%;
     padding-top: 0.2em;
-    font-size: 6em;
+  }
+
+  #lil-rio {
+    left: 1em;
+    width: 7em;
   }
 }
 
@@ -667,34 +657,45 @@ footer li {
   }
 }
 
-@media (max-width: 700px) {
-  #about p {
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: left;
+@media (max-width: 450px) {
+  #header-content-image h1 {
+    font-size: 2.95em;
   }
-
-  .large-headers {
-    font-size: 4.8em;
-    padding-left: 34%;
-    padding-top: 0.2em;
-  }
-
-  #lil-rio {
-    left: 1em;
-    width: 7em;
-  }
-}
-
-@media (max-width: 1000px) {
-  #lil-rio {
-    width: 17%;
+  #header-content-image h2 {
+    font-size: 1.3em;
   }
   .contact p {
     padding-left: 10%;
   }
   .large-headers {
-    padding-left: 1.3em;
-/*    font-size: 8em;*/
+    padding-left: 29%;
+    padding-top: 0.2em;
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 355px) {
+  .socialism {
+    padding-top: 0.8em;
+  }
+  footer {
+    text-align: center;
+  }
+  #credit {
+    float: none;
+    margin: 0;
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .contact p {
+    padding-left: 10%;
+    padding-top: 1em;
+  }
+  .large-headers {
+    padding-left: 31%;
+    font-size: 8em;
+    padding-top: 0.3em;
+    color: aqua;
   }
 }
