@@ -269,6 +269,7 @@ video.fullscreen {
 
 /*------PORTFOLIO------*/
 
+/*film library my films latest films background IMAGE BACKGROUND*/
 .film-library {
   background-image: url(../images/bokeh1.png);
 /*  background-color: #eef1f4;*/
@@ -370,7 +371,7 @@ video.fullscreen {
 
 .lower-film-library-banner {
   width: 100%;
-  background-color: #1665c1;
+  background-color: rgba(0, 0, 0, 0.35);
 /*  height: 2em;*/
   text-align: center;
   padding: 0.5em 0 0.5em 0;
