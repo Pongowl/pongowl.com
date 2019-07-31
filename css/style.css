@@ -560,6 +560,9 @@ footer li {
 #submebutton {
   padding: 0.5em;
 }
+.g-ytsubscribe {
+  font-size: 2em;
+}
 
 #credit {
   /*  position: relative;*/
