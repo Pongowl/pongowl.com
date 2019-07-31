@@ -275,9 +275,9 @@ video.fullscreen {
     border-top: 0.5em solid white;
 /*  padding-bottom: 0.5em;*/
 }
-.Latest-Films-Header {
-  Color:white
-  font-size:2.5em
+.Latest-Film-Header {
+  Color:white;
+  font-size:1.9em;
 }
 
 .film-row,
