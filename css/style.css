@@ -370,15 +370,7 @@ video.fullscreen {
   text-align: center;
   padding: 0.5em 0 0.5em 0;
   font-size: 1.5em;
-}
 
-.lower-film-library-banner a {
-  border-bottom: 0.1em solid white;
-}
-
-.lower-film-library-banner a:hover {
-  color: rgba(255, 255, 255, 0.78);
-    border-bottom: 0.1em solid rgba(255, 255, 255, 0.78);
 
 }
 
