@@ -336,6 +336,7 @@ video.fullscreen {
 
 .film .title {
   text-align: center;
+  font-size: 1em;
 /*  text-shadow: 0 0 1em rgba(0, 0, 0, 0.55);*/
   color: white;
 
