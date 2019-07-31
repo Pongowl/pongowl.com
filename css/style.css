@@ -291,7 +291,7 @@ video.fullscreen {
 .film-row > .film,
 .btn-row > .btn {
   text-align: center;
-  cursor: pointer;
+  cursor: default;
 }
 
 #video-lib-buttons {
