@@ -561,6 +561,10 @@ footer li {
   padding: .5em;
   padding-left: 1em;
 }
+  
+#___ytsubscribe_0 {
+  transform: scale(1.2,1.2);
+}
 
 #credit {
   /*  position: relative;*/
