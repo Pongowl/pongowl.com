@@ -138,7 +138,7 @@ nav {
   width: 100%;
   top: 0;
   background-color:lightslategrey;
-  color: black;
+  color: white;
   z-index: 2;
 
   display: flex;
@@ -272,6 +272,7 @@ video.fullscreen {
 /*film library my films latest films background IMAGE BACKGROUND*/
 .film-library {
   background-image: url(../images/bokeh1.png);
+  background-size: cover;
 /*  background-color: #eef1f4;*/
     border-top: 0.5em solid white;
 /*  padding-bottom: 0.5em;*/
