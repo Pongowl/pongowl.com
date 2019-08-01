@@ -456,7 +456,7 @@ video.fullscreen {
 }
 
 .contact p {
-  font-size: 1em;
+  font-size: 2em;
   float: right;
   padding-left: 30%;
   padding-right: 10%;
@@ -611,6 +611,9 @@ footer li {
     padding: 0% 0 12%;
     
   }
+  #about p{
+    font-size: 1em;
+  }
   #header-text{
     transform:scale(0.65);
   
@@ -688,6 +691,10 @@ footer li {
     color:transparent;
     
   }
+  .nav-pages {
+    text-align: center;
+    
+  }
   #header-content-image h2 {
     font-size: 1.5em;
   }
@@ -714,6 +721,9 @@ footer li {
     float: none;
     margin-right: 0;
     margin-top: 0;
+  }
+  #lil-rio {
+    margin-left: 0.5em;
   }
   .contact p {
     padding-left: 10%;
