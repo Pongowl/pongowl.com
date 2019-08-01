@@ -716,9 +716,9 @@ footer li {
     padding-left: 10%;
   }
   .large-headers {
-    padding-left: 29%;
+    padding-left: 36%;
     padding-top: 0.2em;
-    font-size: 3.5em;
+    font-size: 3em;
   }
   #lil-rio {
     left: -1em;
@@ -748,10 +748,5 @@ footer li {
     padding-left: 10%;
     padding-top: 1em;
   }
-  .large-headers {
-    padding-left: 31%;
-    font-size: 8em;
-    padding-top: 0.3em;
-    color: aqua;
-  }
+  
 }
