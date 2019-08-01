@@ -606,9 +606,14 @@ footer li {
 
 /*------MOBILE------*/
 
-@media (max-width:1480px) {
+@media (max-width:1800px) {
   #header-content-image{
-    padding: 4% 0 12%;
+    padding: 0% 0 12%;
+    
+  }
+  #header-text{
+    transform:scale(0.6);
+  
   }
 }
 
