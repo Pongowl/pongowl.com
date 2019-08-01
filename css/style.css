@@ -668,6 +668,8 @@ footer li {
   .nav-pages { padding-left: 0; }
   .nav-pages a { font-size: 1.2em; }
 
+  
+  
   #lil-rio {
     left: 1em;
     width: 7em;
@@ -678,6 +680,7 @@ footer li {
     height: 7em;
     padding-right: 0;
     float:none;
+    font-size: 0.6em
     
   }
   #credit {
