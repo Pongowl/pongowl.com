@@ -705,6 +705,10 @@ footer li {
     text-align: center;
     
   }
+  .lower-film-library-banner {
+    font-size: 1em
+  }
+
   #header-content-image h2 {
     font-size: 1.5em;
   }
@@ -714,7 +718,12 @@ footer li {
   .large-headers {
     padding-left: 29%;
     padding-top: 0.2em;
-    font-size: 6em;
+    font-size: 3.5em;
+  }
+  #lil-rio {
+    left: -1em;
+    margin-top: -1em;
+    margin-bottom: 1em;
   }
 }
 
