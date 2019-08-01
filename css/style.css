@@ -654,6 +654,10 @@ footer li {
     align-items: center;
     font-size: 0.9em;
   }
+  .nav-social a {
+    font-size: 1.5em;
+    
+  }
 
   nav ul { padding: 0; }
   .nav-pages { padding-left: 0; }
