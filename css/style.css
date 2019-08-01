@@ -239,7 +239,7 @@ video.fullscreen {
   /*  background: transparent;*/
   /*background: transparent url("http://bricksinmotion.com/movie/wp-content/uploads/2016/01/header_bricks.jpg") no-repeat fixed 50% 0px; background-attachment: fixed;*/
   background-size: cover;
-  padding: 12% 0 13%;
+  padding: 10% 0 16%;
   /*  text-transform: uppercase;*/
   text-align: center;
   color: white;
@@ -606,17 +606,17 @@ footer li {
 
 /*------MOBILE------*/
 
-@media (max-width:1800px) {
+@media (max-width:1600px) {
   #header-content-image{
     padding: 0% 0 12%;
     
   }
   #header-text{
-    transform:scale(0.6);
+    transform:scale(0.65);
   
   }
 }
-
+}
 @media (max-width: 1000px) {
   #lil-rio {
     width: 17%;
@@ -637,12 +637,23 @@ footer li {
     padding-right: 1em;
     text-align: left;
   }
+  #header-content-image {
+    padding: 9% 0 %12;
+  }
 
   .large-headers {
     font-size: 4.8em;
     padding-left: 34%;
     padding-top: 0.2em;
   }
+   nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul { padding: 0; }
+  .nav-pages { padding-left: 0; }
+  .nav-pages a { font-size: 1.2em; }
 
   #lil-rio {
     left: 1em;
@@ -651,14 +662,7 @@ footer li {
 }
 
 @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul { padding: 0; }
-  .nav-pages { padding-left: 0; }
-  .nav-pages a { font-size: 1.2em; }
+ 
 
   #header-home {
     margin-top: 7em;
@@ -677,6 +681,9 @@ footer li {
 @media (max-width: 450px) {
   #header-content-image h1 {
     font-size: 2.95em;
+  }
+  .nav-pages .bullet{
+    margin: -0.3em;
   }
   #header-content-image h2 {
     font-size: 1.3em;
