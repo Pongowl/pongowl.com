@@ -424,7 +424,7 @@ video.fullscreen {
 }
 
 .BiMAd h2 a:hover {
-  border-bottom: 0.1em solid rgba(25, 31, 31, 0.);
+  border-bottom: 0.1em solid rgba(25, 31, 31, 0);
   color: rgba(25, 31, 31, 0.69);
 }
 
@@ -643,7 +643,7 @@ footer li {
     text-align: left;
   }
   #header-content-image {
-    padding: 9% 0 %12;
+    padding: 9% 0 12%;
   }
 
   .large-headers {
@@ -693,6 +693,12 @@ footer li {
 }
 
 @media (max-width: 450px) {
+  #header-content-image {
+    margin-top: -4.2em;
+
+  }
+  
+  
   #header-content-image h1 {
     font-size: 2.95em;
   }
