@@ -658,6 +658,9 @@ footer li {
     font-size: 1.5em;
     
   }
+  .nav-social li {
+    padding-top: 0;
+  }
 
   nav ul { padding: 0; }
   .nav-pages { padding-left: 0; }
@@ -694,6 +697,9 @@ footer li {
     margin: -0.95em;
     color:transparent;
     
+  }
+  .film-row h3{
+    font-size: 0.7;
   }
   .nav-pages {
     text-align: center;
