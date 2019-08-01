@@ -184,7 +184,7 @@ nav {
 
 .nav-social a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1.5em;
 }
 
@@ -194,10 +194,10 @@ nav {
   color: #E62117;
 }
 
-.nav-social .fa-twitter:hover,
-.nav-social .fa-twitter:focus,
-.nav-social .fa-twitter:active {
-  color: #1da1f2;
+.nav-social .fa-flickr:hover,
+.nav-social .fa-flickr:focus,
+.nav-social .fa-flickr:active {
+  color: #337bef;
 }
 
 .nav-social .fa-instagram:hover,
