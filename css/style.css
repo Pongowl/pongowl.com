@@ -185,7 +185,7 @@ nav {
 .nav-social a {
   text-decoration: none;
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .nav-social .fa-youtube:hover,
@@ -239,7 +239,7 @@ video.fullscreen {
   /*  background: transparent;*/
   /*background: transparent url("http://bricksinmotion.com/movie/wp-content/uploads/2016/01/header_bricks.jpg") no-repeat fixed 50% 0px; background-attachment: fixed;*/
   background-size: cover;
-  padding: 12% 0 12%;
+  padding: 12% 0 13%;
   /*  text-transform: uppercase;*/
   text-align: center;
   color: white;
@@ -252,7 +252,7 @@ video.fullscreen {
 }
 
 #header-content-image h1 {
-  font-size: 6em;
+  font-size: 5.2em;
   font-weight: 300;
   cursor: default;
   margin: 0;
@@ -261,7 +261,7 @@ video.fullscreen {
 }
 
 #header-content-image h2 {
-  font-size: 3em;
+  font-size: 2.7em;
   margin-top: -0.5em;
   letter-spacing: 8px;
 }
@@ -605,6 +605,13 @@ footer li {
 
 
 /*------MOBILE------*/
+
+@media (max-width:1480px) {
+  #header-content-image{
+    padding: 4% 0 12%;
+  }
+}
+
 @media (max-width: 1000px) {
   #lil-rio {
     width: 17%;
