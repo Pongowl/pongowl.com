@@ -115,12 +115,12 @@
   }
 
   // Duplicate this and a thing in the HTML to add another section
-  document.querySelector("#btn-LatestFilms").addEventListener("click", loadVideos);
+  document.querySelector("#btn-client").addEventListener("click", loadVideos);
 
 
   // Load the short films playlist on page load
   document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector("#btn-LatestFilms").click();
+    document.querySelector("#btn-client").click();
   });
 
   // Automatically play hero video background on tablet-sized and larger screens
