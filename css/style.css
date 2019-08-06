@@ -661,6 +661,16 @@ footer li {
   
   }
 }
+
+@media (max-width:1260px) {
+  #Lposter {
+    display:none;
+  } 
+  #Rposter {
+    display:none;
+  }
+}
+
 @media (max-width: 1000px) {
   #lil-rio {
     left: 1em;
@@ -677,14 +687,7 @@ footer li {
   }
 }
 
-@media (max-width:800px) {
-  #Lposter {
-    display:none;
-  } 
-  #Rposter {
-    display:none;
-  }
-}
+
   
 
 @media (max-width: 700px) {
