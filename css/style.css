@@ -409,6 +409,17 @@ background: linear-gradient(90deg, rgba(24,30,31,1) 0%, rgba(67,87,102,1) 20%, r
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.Lposter {
+  float:left;
+  height: 50vh;
+  
+}
+
+.Rposter {
+  float:right;
+  height: 50vh;
+  
+}
 
 .poster-p {
   width: 40%;
