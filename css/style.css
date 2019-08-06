@@ -662,12 +662,10 @@ footer li {
   }
 }
 
-@media (max-width:1260px) {
-  #Lposter {
-    display:none;
-  } 
-  #Rposter {
-    display:none;
+@media (max-width:1250px) {
+  #MainPoster {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 }
 
@@ -691,6 +689,13 @@ footer li {
   
 
 @media (max-width: 700px) {
+  #Lposter {
+    display: none;
+  }
+  #Rposter {
+    display: none;
+    
+  }
   #submebutton {
     float: none;
     padding-top: 2em;
