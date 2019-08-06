@@ -387,8 +387,8 @@ video.fullscreen {
 .poster {
   display:flex;
   align-items: center;
-  justify-content: center;
-  
+  flex-wrap: nowrap;
+  justify-content: space-around;
   border-top: 0.5em solid rgba(255, 255, 255, 0.5);
   background: rgb(24,30,31);
 background: linear-gradient(90deg, rgba(24,30,31,1) 0%, rgba(67,87,102,1) 20%, rgba(67,87,102,1) 80%, rgba(24,30,31,1) 100%);
@@ -402,28 +402,25 @@ background: linear-gradient(90deg, rgba(24,30,31,1) 0%, rgba(67,87,102,1) 20%, r
   padding-right:10em;
   
 */
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 #MainPoster {
-  margin-left: auto;
-  margin-right: auto;
   height: 90%;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 #Lposter {
-  height: 60%;
-  
+  height: 55%;
+  padding-left: 1%;
+  padding-right: 8%;
   
 }
 
 #Rposter {
-  height: 60%;
-  
+  height: 55%;
+  padding-right: 1%;
+  padding-left: 8%;
 }
 
 .poster-p {
