@@ -387,17 +387,19 @@ video.fullscreen {
 /*--------Poster-------*/
 
 .poster {
-  display:flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+/*
+  margin-left: auto;
+  margin-right:auto;
+  
+*/
+  padding: 2% 0;
   border-top: 0.5em solid rgba(255, 255, 255, 0.5);
   background: rgb(24,30,31);
 background: linear-gradient(90deg, rgba(24,30,31,1) 0%, rgba(67,87,102,1) 20%, rgba(67,87,102,1) 80%, rgba(24,30,31,1) 100%);
   background-size: cover;
 /*  background-attachment: fixed;*/
   background-position: center;
-  height: 90vh;
+/*  height: 90vh;*/
 
 /*
   padding-left:10em;
@@ -407,22 +409,42 @@ background: linear-gradient(90deg, rgba(24,30,31,1) 0%, rgba(67,87,102,1) 20%, r
 
 }
 
+#posterIMGs {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+}
+
+#posterIMGs img {
+/*    height: 90vh;*/
+vertical-align: middle;
+  
+}
+
 #MainPoster {
-  height: 90%;
+  height: 91vh;
   padding-top: 2em;
   padding-bottom: 2em;
+  padding-left: 6%;
+  padding-right: 6%;
 }
+
 #Lposter {
-  height: 55%;
+  height: 50vh;
+/*
   padding-left: 1%;
   padding-right: 8%;
+*/
   
 }
 
 #Rposter {
-  height: 55%;
+  height: 50vh;
+/*
   padding-right: 1%;
   padding-left: 8%;
+*/
 }
 
 .poster-p {
@@ -655,6 +677,15 @@ footer li {
   }
 }
 
+@media (max-width:800px) {
+  #Lposter {
+    display:none;
+  } 
+  #Rposter {
+    display:none;
+  }
+}
+  
 
 @media (max-width: 700px) {
   #submebutton {
