@@ -637,6 +637,10 @@ footer li {
 
 
 @media (max-width: 700px) {
+  #submebutton {
+    float: none;
+    padding-top: 2em;
+  }
   #about p {
     padding-left: 1em;
     padding-right: 1em;
@@ -686,6 +690,8 @@ footer li {
   #credit {
     float: none;
     padding-left: 0;
+    background color: black;
+    padding-bottom: 1.2em;
     
   }
 }
