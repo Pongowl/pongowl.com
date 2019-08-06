@@ -7,7 +7,7 @@ function Film(id, title, url, playlist, thumbnail) {
   this.html = null;
 };
 
-Film.prototype.TITLE_LENGTH = 38;
+Film.prototype.TITLE_LENGTH = 34;
 
 Film.prototype.compile = function(html) {
   "use strict";
