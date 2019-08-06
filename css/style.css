@@ -382,9 +382,9 @@ video.fullscreen {
 }
 
 
-/*--------BIM AD-------*/
+/*--------Poster-------*/
 
-.BiMAd {
+.poster {
   border-top: 0.5em solid rgba(255, 255, 255, 0.5);
   background-image: url(../images/gem.jpg);
   background-size: cover;
@@ -401,29 +401,29 @@ video.fullscreen {
   margin-right: auto;
 }
 
-.BiMAd img {
+.poster img {
   margin-left: auto;
 }
 
-.BiMAd-p {
+.poster-p {
   width: 40%;
   color: black;
   margin-right: auto;
 /*  text-shadow: 0 0 10px rgba(0, 0, 0, 0.42);*/
 }
 
-.BiMAd h2 {
+.poster h2 {
 /*  float: right;*/
   font-size: 2em;
   font-weight: 700;
 }
 
-.BiMAd h2 a {
+.poster h2 a {
   color: #242e2e;
   border-bottom: 0.1em solid #191F1F;
 }
 
-.BiMAd h2 a:hover {
+.poster h2 a:hover {
   border-bottom: 0.1em solid rgba(25, 31, 31, 0);
   color: rgba(25, 31, 31, 0.69);
 }
