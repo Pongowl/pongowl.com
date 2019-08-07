@@ -754,6 +754,9 @@ footer li {
     padding-bottom: 1.2em;
     
   }
+  .Latest-Film-Header {
+  padding-top: 0em;
+}
 }
 
 @media (max-width: 600px) {
