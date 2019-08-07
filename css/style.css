@@ -269,6 +269,11 @@ video.fullscreen {
   margin-top: -0.5em;
   letter-spacing: 8px;
 }
+.photos-header-bg {
+  background-image: url(../images/starting%20image.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 
 /*------PORTFOLIO------*/
@@ -691,9 +696,8 @@ footer li {
 }
 
 
-  
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   #Lposter {
     display: none;
   }
