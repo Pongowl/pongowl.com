@@ -178,6 +178,10 @@ nav {
   font-weight: 300;
 }
 
+.btn-top {
+cursor: pointer;
+}
+
 .nav-social {
   padding-right: 1em;
 }
