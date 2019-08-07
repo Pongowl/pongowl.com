@@ -1,3 +1,10 @@
+.photos-p {
+  color:white;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Crimson Pro", serif;
+  
+}
 .row {
   display: flex;
   flex-wrap: wrap;
