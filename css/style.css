@@ -9,7 +9,7 @@ body {
   background-color: #373740;
   padding: 0;
   margin: 0;
-  font-family: "Crimson Pro", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-size: 21px;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Crimson Pro", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-weight: 300;
 }
 
@@ -173,7 +173,7 @@ nav {
 .nav-pages a {
   text-decoration: none;
   color: white;
-  font-family: "Crimson Pro", sans-serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1.4em;
   font-weight: 300;
 }
@@ -261,7 +261,7 @@ video.fullscreen {
   cursor: default;
   margin: 0;
   padding-top: 0.2em;
-  font-family: "Crimson Pro", sans-serif;
+  font-family: "Crimson Pro", serif;
 }
 
 #header-content-image h2 {
