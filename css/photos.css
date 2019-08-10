@@ -6,24 +6,6 @@
   
 }
 
-video.fullscreen {
-/*  width: 100%;*/
-}
-
-
-/*
-
-.photos-header-bg {
-  background-image: url(../images/starting%20image.jpg);
-  background-attachment:scroll;
-    background position:left top;
-    background-size:contain;
-    width:100%;
-    
-  remove that height or make it conform to previous height 
-}
-*/
-
 
 .row {
   display: flex;
@@ -31,7 +13,7 @@ video.fullscreen {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other 
+/* Create four equal columns that sits next to each other */
 .column {
   flex: 33.33%;
   max-width: 33.33%;
@@ -44,7 +26,7 @@ video.fullscreen {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of four columns 
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
