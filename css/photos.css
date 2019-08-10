@@ -11,6 +11,7 @@
   background-attachment:scroll;
     background position:left top;
     background-size:contain;
+    will-change: transform;
     width:100%;
     
 /*  remove that height or make it conform to previous height */
