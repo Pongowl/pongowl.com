@@ -111,6 +111,11 @@
 
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
   <script src="https://apis.google.com/js/platform.js"></script>
+      <script>$(window).scroll(function() {
+  var scrolledY = $(window).scrollTop();
+  $('.photos-header-bg').css('background-position', 'left ' + ((scrolledY)) + 'px');
+    });
+      </script>
 </div>
 </body>
 </html>

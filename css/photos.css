@@ -5,6 +5,15 @@
   font-family: "Crimson Pro", serif;
   
 }
+
+.photos-header-bg {
+  background-image: url(../images/starting%20image.jpg);
+  background-attachment:scroll;
+    background position:left top;
+    background-size:cover;
+    width:100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
