@@ -12,6 +12,8 @@
     background position:left top;
     background-size:cover;
     width:100%;
+    height: 400em;
+/*  remove that height or make it conform to previous height */
 }
 
 .row {
