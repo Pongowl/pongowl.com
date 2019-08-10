@@ -12,7 +12,6 @@
     background position:left top;
     background-size:contain;
     will-change: transform;
-    position: fixed;
     width:100%;
     
 /*  remove that height or make it conform to previous height */
