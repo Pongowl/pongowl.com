@@ -788,8 +788,9 @@ footer li {
     font-size: 5em;
   }
   
-img.fullscreen
-  { transform: scale(0.5); }
+
+img.fullscreen {
+   transform: translate(-50%, -50%) scale(0.5); }
 
 }
 
