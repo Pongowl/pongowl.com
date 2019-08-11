@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: #373740;
+  background-color: #0a0e0d;
   padding: 0;
   margin: 0;
   font-family: "Crimson Pro", serif;
@@ -292,7 +292,7 @@ img.fullscreen {
 .film-library {
   background-image: url(../images/bokeh1.png);
   background-size: cover;
-/*  background-color: #eef1f4;*/
+/*  background-color: #0a0e0d;*/
     border-top: 0.5em solid white;
 /*  padding-bottom: 0.5em;*/
 }
