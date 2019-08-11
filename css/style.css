@@ -787,6 +787,10 @@ footer li {
   .large-headers {
     font-size: 5em;
   }
+  
+img.fullscreen
+  { translate(-50%, -50%) scale(0.5); }
+
 }
 
 @media (max-width: 450px) {
