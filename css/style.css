@@ -789,7 +789,7 @@ footer li {
   }
   
 img.fullscreen
-  { translate(-50%, -50%) scale(0.5); }
+  { transform: scale(0.5); }
 
 }
 
