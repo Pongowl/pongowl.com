@@ -541,7 +541,7 @@ vertical-align: middle;
 
 .contact h1 {
   position: relative;
-  color: rgba(255, 255, 255, 0.27);
+  color: rgba(0, 0, 0, 0.27);
   text-align: left;
   cursor: default;
   max-width: 75%;
