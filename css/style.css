@@ -646,7 +646,8 @@ footer li {
 .sliding-middle-out {
   display: inline-block;
   position: relative;
-  padding-bottom: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .sliding-middle-out:after {
   content: '';
