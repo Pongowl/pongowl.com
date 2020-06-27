@@ -5,7 +5,7 @@ function Film(id, title, url, playlist, thumbnail) {
   this.title = title;
   this.thumbnail = thumbnail;
   this.html = null;
-};
+}
 
 Film.prototype.TITLE_LENGTH = 34;
 

@@ -29,6 +29,8 @@
   text-align: center;
   font-size: 1.7em;
   font-family: "Crimson Pro", serif;
+  padding-left: 4em;
+  padding-right: 4em;
   
 }
 .photos-mid {
@@ -36,7 +38,18 @@
   text-align: center;
   font-size: 1.3em;
   font-family: "Crimson Pro", serif;
+   padding-left: 3.3em;
+  padding-right: 3.3em;
 }
+.photos-mid2 {
+  color:white;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Crimson Pro", serif;
+   padding-left: 10.5em;
+  padding-right: 10.5em;
+}
+
 .photos-t {
   color:white;
   text-align: center;
@@ -72,10 +85,24 @@
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 900px) {
+ 
+  .photos-mid2 {
+   padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+}
+
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
     padding: 0;
   }
+  .photos-mid2 {
+   padding-left: 1em;
+  padding-right: 1em;
 }
+}
+
