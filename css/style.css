@@ -529,7 +529,8 @@ vertical-align: middle;
 }
 
 .contact {
-  border-top: 0.5em solid rgba(255, 255, 255, 0.31);
+  padding-top: 5%;
+  border-top: 1em solid rgba(255, 255, 255, 0.31);
   /*  background-color: #151517;*/
   position:relative;
   background-image: url(../images/cloudsss.jpg);
