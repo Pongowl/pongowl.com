@@ -293,7 +293,7 @@ img.fullscreen {
   background-image: url(../images/bokeh1.png);
   background-size: cover;
 /*  background-color: #0a0e0d;*/
-    border-top: 0.5em solid white;
+    border-top: 0.5em solid rgba(255, 255, 255, 0.6);
 /*  padding-bottom: 0.5em;*/
 }
 .Latest-Film-Header {
@@ -515,12 +515,12 @@ vertical-align: middle;
 }
 
 .contact p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   float: right;
   padding-left: 30%;
   padding-right: 10%;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-  color: rgb(19, 38, 57);
+  color: rgba(19, 38, 57, 0.86);
 }
 
 .contact.socialism a {
@@ -541,7 +541,7 @@ vertical-align: middle;
 
 .contact h1 {
   position: relative;
-  color: rgba(0, 0, 0, 0.27);
+  color: rgba(0, 0, 40, 0.18);
   text-align: left;
   cursor: default;
   max-width: 75%;
