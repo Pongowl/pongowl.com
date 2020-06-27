@@ -25,16 +25,16 @@
   text-align: center;
 }
 .photos-p {
-  color:white;
+  color:rgba(255, 255, 255, 0.83);
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.75em;
   font-family: "Crimson Pro", serif;
   padding-left: 4em;
   padding-right: 4em;
   
 }
 .photos-mid {
-  color:white;
+  color:rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 1.3em;
   font-family: "Crimson Pro", serif;
@@ -42,9 +42,9 @@
   padding-right: 3.3em;
 }
 .photos-mid2 {
-  color:white;
+  color:rgba(255, 255, 255, 0.75);
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-family: "Crimson Pro", serif;
    padding-left: 10.5em;
   padding-right: 10.5em;
@@ -88,10 +88,11 @@
 
 
 .filmheading {
-   padding: 6% 0;
-  border-top: 0.5em solid rgba(255, 255, 255, 0.5);
+   padding: 2% 0;
+  border-top: 0.5em solid rgba(200, 200, 200, 0.5);
+  border-bottom: 0.5em solid rgba(200, 200, 200, 0.5);
   background: rgb(24,30,31);
-background: linear-gradient(90deg, rgba(24,30,31,1) 0%, rgba(67,87,102,1) 20%, rgba(67,87,102,1) 80%, rgba(24,30,31,1) 100%);
+background: linear-gradient(90deg, rgba(4,3,1,1) 0%, rgba(7,7,7,0.8) 20%, rgba(7,7,7,0.8) 80%, rgba(4,3,1,1) 100%);
   background-size: cover;
 /*  background-attachment: fixed;*/
   background-position: center;  
